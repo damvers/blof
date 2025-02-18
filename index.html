@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de economia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family:  "Times New Roman", Times, serif;
+      margin: 20px;
+      line-height: 1.5;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .section-title {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .content-section {
+            padding: 60px 0;
+        }
+        .search-bar {
+            max-width: 400px;
+            margin: auto;
+        }
+      .h1{
+        text-align: justify; /* Justifica el texto */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1,6; /* Espaciado entre líneas */
+    max-width: 900px; /* Ancho máximo del texto */
+    margin: auto; /* Centra el contenido */
+      }
+
+      .boton {
+    display: inline-block;
+    padding: 12px 24px; /* Aumenta el espaciado interno */
+    background-color: #984caf; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.boton:hover {
+    background-color: #7c64e6; /* Color de fondo al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+}
+    </style>
+</head>
+<body>
+    
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg " style="background-color: blueviolet;">
+        <div class="container" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073c0 5.997 4.388 10.972 10.125 11.852V15.53H7.077v-3.457h3.048V9.847c0-3.01 1.791-4.667 4.533-4.667 1.312 0 2.686.236 2.686.236v2.946h-1.514c-1.491 0-1.955.925-1.955 1.873v2.156h3.326l-.532 3.457h-2.794v8.395C19.612 23.045 24 18.07 24 12.073z"/></svg>
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="url(#a)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.146 4.771 1.691 4.917 4.917.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.146 3.225-1.665 4.771-4.917 4.917-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.146-4.771-1.691-4.917-4.917-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85C2.163 3.924 3.681 2.38 6.933 2.234 8.199 2.176 8.579 2.163 12 2.163zm0 1.837c-3.173 0-3.543.012-4.797.07-2.583.118-3.778 1.313-3.896 3.896-.058 1.254-.07 1.624-.07 4.797s.012 3.543.07 4.797c.118 2.583 1.313 3.778 3.896 3.896 1.254.058 1.624.07 4.797.07s3.543-.012 4.797-.07c2.583-.118 3.778-1.313 3.896-3.896.058-1.254.07-1.624.07-4.797s-.012-3.543-.07-4.797c-.118-2.583-1.313-3.778-3.896-3.896-1.254-.058-1.624-.07-4.797-.07zm0 4.33a5.67 5.67 0 1 1 0 11.34 5.67 5.67 0 0 1 0-11.34zm0 1.837a3.833 3.833 0 1 0 0 7.667 3.833 3.833 0 0 0 0-7.667zm4.63-3.276a1.314 1.314 0 1 1 0 2.627 1.314 1.314 0 0 1 0-2.627z"/><defs><linearGradient id="a" x1="12" x2="12" y1="2.163" y2="21.837" gradientUnits="userSpaceOnUse"><stop stop-color="#f9ed32"/><stop offset=".328" stop-color="#ee2a7b"/><stop offset=".689" stop-color="#6228d7"/><stop offset="1" stop-color="#5b27d7"/></linearGradient></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M23.643 4.937a9.8 9.8 0 0 1-2.828.775 4.935 4.935 0 0 0 2.165-2.724 9.833 9.833 0 0 1-3.125 1.195A4.924 4.924 0 0 0 16.616 3c-2.726 0-4.938 2.213-4.938 4.937 0 .39.045.765.13 1.126C7.72 8.86 4.1 6.913 1.67 3.96a4.93 4.93 0 0 0-.666 2.476c0 1.706.867 3.213 2.188 4.096a4.904 4.904 0 0 1-2.235-.618v.06c0 2.385 1.698 4.374 3.946 4.827a4.935 4.935 0 0 1-2.23.086c.63 1.963 2.45 3.396 4.605 3.44a9.9 9.9 0 0 1-6.14 2.116c-.398 0-.79-.023-1.175-.067a13.963 13.963 0 0 0 7.557 2.213c9.066 0 14.02-7.517 14.02-14.02 0-.213-.005-.425-.015-.636A9.936 9.936 0 0 0 24 4.59a9.918 9.918 0 0 1-2.857.78z"/></svg>
+
+            <a class="navbar-brand" href="#">De la antigüedad a los brics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            
+            </div>
+        </div>
+    </nav>
+    
+   
+    
+    <!-- Carrusel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/WhatsApp Image 2025-02-17 at 10.36.12 PM.jpeg"  alt="Imagen 1"  width="1470" height="600" style="padding-left: 3%; padding-top: 1%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/WhatsApp Image 2025-02-17 at 10.36.27 PM.jpeg"  alt="Imagen 2" width="1470" height="600" style="padding-left: 3%; padding-top: 1%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/WhatsApp Image 2025-02-17 at 10.36.39 PM.jpeg"  alt="Imagen 3"  width="1470" height="600" style="padding-left: 3%; padding-top: 1%;">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sección de Introducción -->
+    <section id="introduccion" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Introducción</h1>
+                    <p>Una crisis comercial se puede definir como la situación en la que se presenta una disminución significativa en la actividad económica, especialmente en el ámbito del comercio, lo que puede manifestarse en una reducción de las ventas, cierres de empresas, aumento del desempleo y otros problemas económicos, ya sea nacional, a nivel local o internacional. esta se puede presentar por diferentes factores y no dejar de lado las consecuencias que esta puede traer, teniendo en cuenta que pueden ser tan amplias y afectar tanto a empresas como a consumidores. 
+
+                        La crisis comercial de América latina ha sido un constante problema que se ha experimentado como la crisis de la deuda de los años 80 y la crisis del covid-19 en 2020. Estos son solo unos ejemplos de las crisis que ha vivido América latina, teniendo en cuenta que América latina ha experimentado diversas crisis comerciales, vinculadas comúnmente con su dependencia de la exportación de materias primas y su vulnerabilidad a los cambios de precios internacionales. Ejemplo de ello la gran depresión de los años 30 y la crisis de deuda de los años 80.
+                        
+                        Pero, a pesar de su pasado y sus constantes tropiezos con estas crisis. América latina algún día poder evitar entrar en crisis comerciales y lograr que sus diferentes naciones sean fuertes en la economía global, teniendo tal dependencia para poder evitar cualquiera de las diferentes crisis que se puedan vivir, quizás sea con ayuda o bueno entrando un poco en panorama, los BRICS podrían ayudar a los países de América latina a transformarse en economías prosperas y si es tal caso podríamos plantear una pregunta y a medida de este documento nos daremos cuenta de las posibilidades que existen de esta idea.
+                         ¿Podrán las naciones de América latina experimentar un cambio en gran medida de sus economías y transformarlas en economías prosperas en un futuro? 
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/descargar.jpg" class="img-fluid" alt="Introducción" width="700" height="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="image-container">
+        
+        <a href="p.html" target="_blank"  class="mi-enlace">
+            <div class="overlay"><h4>crisis comercial de américa latina y u.s.a</h4></div>
+            <img src="img/descargar.jpg" alt="Descripción de la imagen 1"  />
+            
+        </a>
+        <a href="h.html" target="_blank" class="mi-enlace">
+            <center><div class="overlay"><h3>tema de los brics</h3></div></center>  
+            <img src="img/OIP.jpg" alt="Descripción de la imagen 2" />
+        </a>
+        <a href="j.html" target="_blank"  class="mi-enlace">
+            <div class="overlay"><h3>comparacion de las brics y g7</h3></div>
+            <img src="img/OIP (2).jpg" alt="Descripción de la imagen 3" />
+        </a>
+    </div>
+      <h1>Comparación del Pensamiento Económico de China, Roma, India y Mesopotamia con la Situación Actual.</h1>
+
+<p class="h1">
+    A lo largo de la historia, las civilizaciones han desarrollado sistemas económicos que, a pesar de las diferencias temporales, siguen teniendo impacto en la actualidad. En este espacio, exploraremos el pensamiento económico de China, Roma, India y Mesopotamia y lo compararemos con la actual economía moderna.
+      Una forma de relacionar estos temas con las antiguas civilizaciones podría comenzar con Mesopotamia y el uso de la escritura cuneiforme para transacciones comerciales, así como el desarrollo del crédito y los préstamos, en Egipto cuya economía estaba centralizada y basada en impuestos en especie (granos, ganado) y planificación estatal.
+      
+      Asimismo, en Grecia y Roma, el comercio marítimo, el uso de monedas de intercambio y la expansión de mercados fueron elementos clave del desarrollo económico. Por otro lado, en la China imperial, las rutas comerciales, como la Ruta de la Seda, el uso del papel moneda y la intervención estatal en la economía marcaron una influencia significativa.
+      
+      En comparación con la actualidad, el comercio internacional sigue siendo un pilar fundamental de la economía global, tal como lo fue en Roma o China. La intervención estatal y la planificación económica continúan siendo estrategias utilizadas, como es el caso de China y los países que conforman el BRICS.
+      
+      Sin embargo, existen diferencias notables. En la actualidad, el uso de tecnología y digitalización, incluyendo criptomonedas y blockchain, ha transformado los sistemas económicos. Además, mientras que en la antigüedad predominaban economías centralizadas, hoy en día prevalece la economía de mercado. Otra diferencia clave es la globalización y la rapidez en las transacciones: en el pasado, el comercio dependía de largas rutas comerciales, mientras que hoy los mercados digitales permiten intercambios instantáneos a nivel mundial.
+      
+           A continuación un pequeño recuadro para hacer las comparaciones de las 2 épocas y analizar como su economía se distingue una de otra.
+      
+        </p>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>Antigüedad</th>
+                <th>Actualidad</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Mesopotamia: Los Pioneros del Comercio
+
+                    Economía Antigua basada en la agricultura y el comercio. Implementaban el uso de sistemas de crédito y contratos escritos en tablillas de arcilla.<br> Se trataba en 
+                    comercio con otras civilizaciones mediante el trueque y metales preciosos.
+                    </td>
+                <td> Los contratos financieros siguen siendo fundamentales en el comercio global, aunque ahora digitalizados, El comercio internacional sigue siendo clave, pero con una regulación más compleja y tecnología avanzada.</td>
+             
+            </tr>
+            <tr>
+                <td>2. India: De los Textiles a la Globalización
+
+                    Economía Antigua Influenciada por el sistema de castas, lo que afectaba la distribución de la riqueza. India era un centro productor de textiles y especias. Prácticas financieras como el uso de letras de cambio.
+                    
+                    </td>
+                <td>
+                    India sigue siendo un líder en la producción textil, pero ahora también en tecnología y servicios. Su economía se ha globalizado, con una creciente clase media y fuerte inversión extranjera.
+                    </td>
+              
+            </tr>
+            <tr>
+                <td>3. China: Control Estatal y Comercio
+
+                    Economía Antigua basada en el confucianismo, que promovía estabilidad y control estatal. Control estatal sobre recursos clave como sal y hierro. Desarrollo del papel moneda y sistemas de crédito.
+                    </td>
+                <td>China mantiene un modelo de economía dirigida por el Estado, con sectores estratégicos bajo control gubernamental. Es una de las mayores potencias económicas, con un fuerte enfoque en la tecnología y la manufactura.
+
+                </td>
+               
+
+            </tr>
+            <tr>
+                <td>4. Roma: Infraestructura y Expansión Económica
+
+                    Economía Antigua basada en la inversión en infraestructura y redes de comercio. Dependencia del trabajo esclavo para la producción agrícola y minera. Uso de moneda para facilitar el comercio.
+                    </td>
+                <td>La infraestructura sigue siendo esencial para el crecimiento económico en el mundo moderno. La economía global ya no depende de la esclavitud, pero enfrenta desafíos como la automatización y la equidad laboral.</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h1>
+        Conclusion
+    </h1>
+    <p class="h1">
+        Analizando cada una de estas economías podemos inferir que cada una de estas civilizaciones desarrolló conceptos económicos que aún influyen en la economía global. La importancia del comercio, la regulación estatal y la infraestructura continúan siendo pilares fundamentales en el mundo moderno y base para unas grandes economías.
+
+
+    </p>
+    <br>
+    <h1>
+        Reflexion
+    </h1>
+    <p class="h1">
+      
+ Finalizando el análisis de este trabajo y conforme a las diferentes investigaciones como grupo quisimos dejar en forma de reflexión en base de diferentes opciones, y pensar que sería muy viable la posible unión de Colombia en los brics y no estamos lejos de ello, pues hay propuestas que indican que hay un proceso que tiene como intención participar en este proyecto, donde avanzaríamos como país, fortaleciendo las relaciones comerciales con los países de los brics, esto siendo un gran avance para la economía de nuestro país y una manera de tratar la creciente inflación, habría más interés en nuestros proyectos de infraestructura, ganando muchos posibles inversionistas dispuestos a apoyar nuestro avance, y siendo un país con más fuerza en la economía global, claramente habrían desafíos como la tensión que habría con Estados Unidos o tener que llevar un muy buen procesos para que esta unión no sea un fracaso, pero con una buena administración y buenos líderes se podría lograr algo muy positivo para el país, tanto económicamente como en el bienestar de la población, y podemos extraer como lección del pasado sucesos como la dependencia con Estados Unidos, y evitar que se cometa este error con las brics, también los errores y perdida que han habido en infraestructura, se invertiría y llevaría un mejor proceso en este aspecto.
+
+    </p>
+    <header>
+        <h1>Bienvenido a la Página de Referencias</h1>
+    </header>
+    <main>
+        <p>Haz clic en el botón a continuación para ver las referencias bibliográficas.</p>
+        <a href="refencias.html" class="boton">Ver Referencias Bibliográficas</a>
+    </main>
+    <br>
+    <!-- Pie de Página -->
+    <footer class="footer text-center bg-dark text-white py-3">
+        <div class="container">
+            <p>&copy; De la antigüedad a los brics. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
